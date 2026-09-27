@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-- Updated locked `smol-toml` (high-severity denial of service on malformed TOML) and `hono` (moderate advisories) to patched releases, so installs no longer report production vulnerabilities. Thanks to [@jvpacini-CW](https://github.com/jvpacini-CW) for [PR #694](https://github.com/nicobailon/pi-mcp-adapter/pull/694).
+- `smol-toml` now requires 1.9.0 or later, which fixes a high-severity denial of service on malformed TOML. The lockfile also moves `hono`, which comes in through the MCP SDK, to a release with its moderate advisories fixed, so `npm audit` on a lockfile install reports no production vulnerabilities. Thanks to [@jvpacini-CW](https://github.com/jvpacini-CW) for [PR #694](https://github.com/nicobailon/pi-mcp-adapter/pull/694).
 
 ## [3.0.0] - 2026-09-26
 
